@@ -12,6 +12,6 @@ pool = ThreadPool(thread_num)
 arg = []
 for x in range(0, thread_num):
     arg.append(target)
-request = makeRequests(BDPing.bd_ping_two, arg)
+request = makeRequests(BDPing.bd_ping, arg)
 [pool.putRequest(req) for req in request]
 pool.wait()

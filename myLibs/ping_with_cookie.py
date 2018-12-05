@@ -17,7 +17,7 @@ target = config.get('bd_push', 'target')
 class BDPing:
 
     @staticmethod
-    def bd_ping():
+    def bd_ping(num):
         global success_count
         global failure_count
         global start_time
